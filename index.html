@@ -135,6 +135,94 @@
             outline: none;
         }
 
+        /* 3D Tactile Buttons & Realistic Depth */
+        .btn-3d {
+            position: relative;
+            transition: transform 0.16s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.2s ease, filter 0.2s ease;
+            will-change: transform, box-shadow;
+        }
+        .btn-3d:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.06);
+        }
+        .btn-3d:active {
+            transform: translateY(2px) scale(0.985);
+        }
+
+        .btn-3d-indigo {
+            background: linear-gradient(180deg, #6366f1 0%, #4338ca 100%);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.32), 0 4px 0 #2e267d, 0 8px 18px rgba(79, 70, 229, 0.42);
+        }
+        .btn-3d-indigo:hover {
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.42), 0 5px 0 #2e267d, 0 12px 24px rgba(99, 102, 241, 0.55);
+        }
+        .btn-3d-indigo:active {
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.35), 0 1px 0 #2e267d, 0 3px 8px rgba(79, 70, 229, 0.35);
+        }
+
+        .btn-3d-emerald {
+            background: linear-gradient(180deg, #10b981 0%, #047857 100%);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.32), 0 4px 0 #064e3b, 0 8px 18px rgba(16, 185, 129, 0.38);
+        }
+        .btn-3d-emerald:hover {
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.42), 0 5px 0 #064e3b, 0 12px 24px rgba(16, 185, 129, 0.5);
+        }
+        .btn-3d-emerald:active {
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.35), 0 1px 0 #064e3b, 0 3px 8px rgba(16, 185, 129, 0.3);
+        }
+
+        .btn-3d-amber {
+            background: linear-gradient(180deg, rgba(245, 158, 11, 0.24) 0%, rgba(180, 83, 9, 0.22) 100%);
+            box-shadow: inset 0 1px 0 rgba(253, 230, 138, 0.25), 0 3px 0 rgba(120, 53, 15, 0.85), 0 6px 14px rgba(245, 158, 11, 0.22);
+        }
+        .btn-3d-amber:active {
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(120, 53, 15, 0.85);
+        }
+
+        .btn-3d-icon {
+            background: linear-gradient(180deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14), 0 3px 0 #020617, 0 6px 12px rgba(0, 0, 0, 0.45);
+        }
+        .btn-3d-icon:active {
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5), 0 1px 0 #020617;
+        }
+
+        /* 3D Emblem / Icon Badges */
+        .icon-3d {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.22s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.22s ease;
+        }
+        .icon-3d i {
+            filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.45));
+        }
+        .icon-3d-indigo {
+            background: linear-gradient(145deg, rgba(99, 102, 241, 0.28), rgba(49, 46, 129, 0.45));
+            box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.25), inset 0 -2px 4px rgba(15, 23, 42, 0.6), 0 6px 14px rgba(79, 70, 229, 0.32);
+        }
+        .icon-3d-amber {
+            background: linear-gradient(145deg, rgba(245, 158, 11, 0.28), rgba(146, 64, 14, 0.45));
+            box-shadow: inset 0 1px 1px rgba(254, 243, 199, 0.25), inset 0 -2px 4px rgba(15, 23, 42, 0.6), 0 6px 14px rgba(245, 158, 11, 0.28);
+        }
+        .icon-3d-purple {
+            background: linear-gradient(145deg, rgba(168, 85, 247, 0.28), rgba(88, 28, 135, 0.45));
+            box-shadow: inset 0 1px 1px rgba(243, 232, 255, 0.25), inset 0 -2px 4px rgba(15, 23, 42, 0.6), 0 6px 14px rgba(168, 85, 247, 0.28);
+        }
+        .icon-3d-sky {
+            background: linear-gradient(145deg, rgba(14, 165, 233, 0.28), rgba(12, 74, 110, 0.45));
+            box-shadow: inset 0 1px 1px rgba(224, 242, 254, 0.25), inset 0 -2px 4px rgba(15, 23, 42, 0.6), 0 6px 14px rgba(14, 165, 233, 0.28);
+        }
+        .icon-3d-rose {
+            background: linear-gradient(145deg, rgba(244, 63, 94, 0.28), rgba(136, 19, 55, 0.45));
+            box-shadow: inset 0 1px 1px rgba(255, 228, 230, 0.25), inset 0 -2px 4px rgba(15, 23, 42, 0.6), 0 6px 14px rgba(244, 63, 94, 0.28);
+        }
+        .icon-3d-emerald {
+            background: linear-gradient(145deg, rgba(16, 185, 129, 0.3), rgba(6, 78, 59, 0.48));
+            box-shadow: inset 0 1px 1px rgba(209, 250, 229, 0.25), inset 0 -2px 4px rgba(15, 23, 42, 0.6), 0 6px 14px rgba(16, 185, 129, 0.3);
+        }
+
         /* Modern Futuristic Button Styles & Animations */
         .btn-shimmer {
             position: relative;
@@ -159,17 +247,6 @@
         }
         .btn-shimmer:hover::after {
             left: 140%;
-        }
-
-        .btn-futuristic {
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-            position: relative;
-        }
-        .btn-futuristic:hover {
-            transform: translateY(-2px) scale(1.02);
-        }
-        .btn-futuristic:active {
-            transform: translateY(1px) scale(0.96);
         }
 
         /* Custom Scrollbar */
@@ -205,11 +282,11 @@
     <div id="splash-screen">
         <div class="flex flex-col items-center space-y-4 animate-in fade-in zoom-in duration-500 px-6 text-center">
             <!-- ดึงรูปไอคอนจริง icon-512.png มาแสดง พร้อมเอฟเฟกต์แอนิเมชัน -->
-            <img src="icon-512.png" alt="LeaveTracker Pro Logo" class="w-28 h-28 rounded-3xl shadow-2xl object-cover border-2 border-indigo-500/40 animate-bounce" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3652/3652191.png'">
+            <img src="icon-512.png" alt="LeaveTracker Pro Logo" class="w-28 h-28 rounded-3xl shadow-2xl object-cover border-2 border-indigo-500/40 animate-bounce" style="box-shadow: inset 0 2px 3px rgba(255,255,255,0.3), 0 14px 28px rgba(0,0,0,0.6), 0 0 30px rgba(99,102,241,0.35);" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3652/3652191.png'">
             <div class="space-y-1">
                 <h1 class="text-2xl font-extrabold text-white tracking-wider flex items-center justify-center gap-2">
                     LeaveTracker Pro
-                    <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-indigo-500 text-white shadow-glow-indigo">PRO</span>
+                    <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full btn-3d-indigo text-white border border-indigo-300/30">PRO</span>
                 </h1>
                 <p class="text-xs text-indigo-300 font-medium">ระบบจัดการและแจ้งเตือนวันลาพนักงานอัจฉริยะ</p>
             </div>
@@ -228,17 +305,17 @@
     <div id="installPwaBanner" class="hidden bg-gradient-to-r from-indigo-900/90 via-indigo-700/90 to-violet-800/90 text-white px-4 py-3 shadow-lg sticky top-0 z-50 backdrop-blur-md border-b border-indigo-500/30">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <img src="icon-192.png" alt="App Icon" class="w-9 h-9 rounded-xl shadow-md bg-white p-0.5" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3652/3652191.png'">
+                <img src="icon-192.png" alt="App Icon" class="w-9 h-9 rounded-xl bg-white p-0.5 border border-white/40" style="box-shadow: 0 3px 0 rgba(15,23,42,0.7), 0 6px 12px rgba(0,0,0,0.4);" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3652/3652191.png'">
                 <div>
                     <p class="text-xs sm:text-sm font-bold tracking-wide">ติดตั้งแอป LeaveTracker Pro</p>
                     <p class="text-[11px] text-indigo-200">เปิดใช้งานได้รวดเร็ว ลื่นไหล เหมือนแอปมือถือ</p>
                 </div>
             </div>
             <div class="flex items-center space-x-2">
-                <button id="btnInstallPwa" class="btn-futuristic btn-shimmer bg-gradient-to-r from-indigo-500 to-violet-600 hover:from-indigo-400 hover:to-violet-500 text-white font-semibold text-xs px-4 py-2 rounded-xl shadow-glow-indigo transition-all flex items-center">
-                    <i class="fa-solid fa-download mr-1.5"></i> ติดตั้งแอป
+                <button id="btnInstallPwa" class="btn-3d btn-3d-indigo btn-shimmer text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all flex items-center border border-indigo-300/30">
+                    <i class="fa-solid fa-download mr-1.5 drop-shadow"></i> ติดตั้งแอป
                 </button>
-                <button onclick="document.getElementById('installPwaBanner').classList.add('hidden')" class="text-indigo-200 hover:text-white p-1.5 text-sm rounded-xl hover:bg-white/10 transition-colors">
+                <button onclick="document.getElementById('installPwaBanner').classList.add('hidden')" class="btn-3d btn-3d-icon text-indigo-200 hover:text-white p-2 text-sm rounded-xl border border-white/15">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
@@ -251,13 +328,13 @@
             <div class="flex justify-between h-16 items-center">
                 <!-- Logo & Brand (ดึงรูป icon-192.png มาแสดงที่หัวมุมซ้าย) -->
                 <div class="flex items-center space-x-3">
-                    <img src="icon-192.png" alt="Logo" class="w-10 h-10 rounded-2xl shadow-glow-indigo object-cover border border-indigo-400/30 transition-all hover:scale-105 cursor-pointer" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3652/3652191.png'">
+                    <img src="icon-192.png" alt="Logo" class="w-10 h-10 rounded-2xl object-cover border border-indigo-300/35 transition-all hover:scale-105 cursor-pointer" style="box-shadow: inset 0 1px 1px rgba(255,255,255,0.3), 0 3px 0 #1e1b4b, 0 8px 18px rgba(79,70,229,0.45);" onerror="this.src='https://cdn-icons-png.flaticon.com/512/3652/3652191.png'">
                     <div>
                         <div class="flex items-center space-x-2">
                             <h1 class="text-lg sm:text-xl font-bold bg-gradient-to-r from-white via-slate-100 to-indigo-200 bg-clip-text text-transparent">
                                 LeaveTracker Pro
                             </h1>
-                            <span class="text-[10px] bg-indigo-500/20 text-indigo-300 font-semibold px-2 py-0.5 rounded-full border border-indigo-500/30">REALTIME</span>
+                            <span class="text-[10px] bg-indigo-500/20 text-indigo-200 font-semibold px-2.5 py-0.5 rounded-full border border-indigo-400/35" style="box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 2px 6px rgba(79,70,229,0.35);">REALTIME</span>
                         </div>
                         <p class="text-[11px] text-slate-400 hidden sm:block">ระบบจัดการและแจ้งเตือนวันลาพนักงาน (Firebase Sync)</p>
                     </div>
@@ -265,8 +342,8 @@
 
                 <!-- Action Controls -->
                 <div class="flex items-center space-x-2 sm:space-x-3">
-                    <button onclick="resetToMockData()" class="btn-futuristic group inline-flex items-center text-xs font-semibold text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/40 hover:border-amber-400 px-4 py-2 rounded-xl transition-all shadow-glow-amber" title="คืนค่าข้อมูลตัวอย่าง">
-                        <i class="fa-solid fa-rotate-left mr-2 text-amber-400 group-hover:-rotate-180 transition-transform duration-500"></i> Reset ข้อมูล
+                    <button onclick="resetToMockData()" class="btn-3d btn-3d-amber group inline-flex items-center text-xs font-semibold text-amber-200 hover:text-amber-100 border border-amber-400/40 hover:border-amber-300 px-4 py-2 rounded-xl" title="คืนค่าข้อมูลตัวอย่าง">
+                        <i class="fa-solid fa-rotate-left mr-2 text-amber-300 group-hover:-rotate-180 transition-transform duration-500 drop-shadow"></i> Reset ข้อมูล
                     </button>
                 </div>
             </div>
@@ -278,18 +355,18 @@
 
         <!-- Glass Navigation Tabs -->
         <div class="glass-panel p-1.5 rounded-2xl shadow-glass overflow-x-auto no-scrollbar border border-slate-800">
-            <div class="flex space-x-1 min-w-max">
-                <button id="tab-btn-dashboard" onclick="switchTab('dashboard')" class="tab-link btn-futuristic active py-2.5 px-4 text-xs font-semibold rounded-xl transition-all flex items-center text-white bg-gradient-to-r from-indigo-600 to-violet-600 shadow-glow-indigo">
-                    <i class="fa-solid fa-chart-pie mr-2 text-indigo-200"></i> Dashboard & แจ้งเตือน
+            <div class="flex space-x-1.5 min-w-max">
+                <button id="tab-btn-dashboard" onclick="switchTab('dashboard')" class="tab-link btn-3d btn-3d-indigo active py-2.5 px-4 text-xs font-semibold rounded-xl flex items-center text-white border border-indigo-300/30">
+                    <i class="fa-solid fa-chart-pie mr-2 text-indigo-100 drop-shadow"></i> Dashboard & แจ้งเตือน
                 </button>
-                <button id="tab-btn-matrix" onclick="switchTab('matrix')" class="tab-link btn-futuristic py-2.5 px-4 text-xs font-semibold rounded-xl transition-all flex items-center text-slate-400 hover:text-slate-100 hover:bg-slate-800/60">
-                    <i class="fa-solid fa-table-cells mr-2 text-slate-400"></i> ตารางวันลาแบบ Matrix
+                <button id="tab-btn-matrix" onclick="switchTab('matrix')" class="tab-link btn-3d btn-3d-icon py-2.5 px-4 text-xs font-semibold rounded-xl flex items-center text-slate-300 hover:text-white border border-slate-700/70">
+                    <i class="fa-solid fa-table-cells mr-2 text-indigo-300"></i> ตารางวันลาแบบ Matrix
                 </button>
-                <button id="tab-btn-employees" onclick="switchTab('employees')" class="tab-link btn-futuristic py-2.5 px-4 text-xs font-semibold rounded-xl transition-all flex items-center text-slate-400 hover:text-slate-100 hover:bg-slate-800/60">
-                    <i class="fa-solid fa-users mr-2 text-slate-400"></i> จัดการพนักงาน & โควตา
+                <button id="tab-btn-employees" onclick="switchTab('employees')" class="tab-link btn-3d btn-3d-icon py-2.5 px-4 text-xs font-semibold rounded-xl flex items-center text-slate-300 hover:text-white border border-slate-700/70">
+                    <i class="fa-solid fa-users mr-2 text-emerald-300"></i> จัดการพนักงาน & โควตา
                 </button>
-                <button id="tab-btn-leaves" onclick="switchTab('leaves')" class="tab-link btn-futuristic py-2.5 px-4 text-xs font-semibold rounded-xl transition-all flex items-center text-slate-400 hover:text-slate-100 hover:bg-slate-800/60">
-                    <i class="fa-solid fa-file-signature mr-2 text-slate-400"></i> ประวัติ/บันทึกการลา
+                <button id="tab-btn-leaves" onclick="switchTab('leaves')" class="tab-link btn-3d btn-3d-icon py-2.5 px-4 text-xs font-semibold rounded-xl flex items-center text-slate-300 hover:text-white border border-slate-700/70">
+                    <i class="fa-solid fa-file-signature mr-2 text-amber-300"></i> ประวัติ/บันทึกการลา
                 </button>
             </div>
         </div>
@@ -307,7 +384,7 @@
                         <h3 id="stat-total-emp" class="text-2xl sm:text-3xl font-extrabold text-white">0</h3>
                         <p class="text-[11px] text-slate-500">คนในระบบ</p>
                     </div>
-                    <div class="w-12 h-12 bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 rounded-2xl flex items-center justify-center text-xl shadow-glow-indigo">
+                    <div class="w-12 h-12 icon-3d icon-3d-indigo text-indigo-300 border border-indigo-400/35 rounded-2xl text-xl">
                         <i class="fa-solid fa-user-group"></i>
                     </div>
                 </div>
@@ -318,7 +395,7 @@
                         <h3 id="stat-on-leave-today" class="text-2xl sm:text-3xl font-extrabold text-amber-400">0</h3>
                         <p class="text-[11px] text-slate-500">คนในวันนี้</p>
                     </div>
-                    <div class="w-12 h-12 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-2xl flex items-center justify-center text-xl shadow-glow-amber">
+                    <div class="w-12 h-12 icon-3d icon-3d-amber text-amber-300 border border-amber-400/35 rounded-2xl text-xl">
                         <i class="fa-solid fa-user-clock"></i>
                     </div>
                 </div>
@@ -329,7 +406,7 @@
                         <h3 id="stat-late-count" class="text-2xl sm:text-3xl font-extrabold text-purple-400">0</h3>
                         <p class="text-[11px] text-slate-500">รายการ/ครั้ง</p>
                     </div>
-                    <div class="w-12 h-12 bg-purple-500/10 text-purple-400 border border-purple-500/20 rounded-2xl flex items-center justify-center text-xl shadow-glow-purple">
+                    <div class="w-12 h-12 icon-3d icon-3d-purple text-purple-300 border border-purple-400/35 rounded-2xl text-xl">
                         <i class="fa-solid fa-business-time"></i>
                     </div>
                 </div>
@@ -340,7 +417,7 @@
                         <h3 id="stat-upcoming-leaves" class="text-2xl sm:text-3xl font-extrabold text-sky-400">0</h3>
                         <p class="text-[11px] text-slate-500">รายการล่วงหน้า</p>
                     </div>
-                    <div class="w-12 h-12 bg-sky-500/10 text-sky-400 border border-sky-500/20 rounded-2xl flex items-center justify-center text-xl">
+                    <div class="w-12 h-12 icon-3d icon-3d-sky text-sky-300 border border-sky-400/35 rounded-2xl text-xl">
                         <i class="fa-solid fa-calendar-day"></i>
                     </div>
                 </div>
@@ -351,7 +428,7 @@
                         <h3 id="stat-low-quota" class="text-2xl sm:text-3xl font-extrabold text-rose-400">0</h3>
                         <p class="text-[11px] text-slate-500">คนสิทธิ์เหลือน้อย</p>
                     </div>
-                    <div class="w-12 h-12 bg-rose-500/10 text-rose-400 border border-rose-500/20 rounded-2xl flex items-center justify-center text-xl">
+                    <div class="w-12 h-12 icon-3d icon-3d-rose text-rose-300 border border-rose-400/35 rounded-2xl text-xl">
                         <i class="fa-solid fa-triangle-exclamation"></i>
                     </div>
                 </div>
@@ -361,12 +438,14 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div class="lg:col-span-2 glass-panel rounded-2xl p-5 space-y-4">
                     <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 pb-3 border-b border-slate-800">
-                        <div>
-                            <h2 class="text-base font-bold text-white flex items-center">
-                                <i class="fa-solid fa-chart-simple text-indigo-400 mr-2"></i>
-                                สรุปวันลาและมาสายคงเหลือของพนักงาน
-                            </h2>
-                            <p class="text-xs text-slate-400">เปรียบเทียบโควตาวันลาและการลงบันทึกมาสายรายบุคคล</p>
+                        <div class="flex items-center gap-3">
+                            <span class="w-9 h-9 icon-3d icon-3d-indigo text-indigo-300 border border-indigo-400/30 rounded-xl text-sm shrink-0">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </span>
+                            <div>
+                                <h2 class="text-base font-bold text-white">สรุปวันลาและมาสายคงเหลือของพนักงาน</h2>
+                                <p class="text-xs text-slate-400">เปรียบเทียบโควตาวันลาและการลงบันทึกมาสายรายบุคคล</p>
+                            </div>
                         </div>
                         <div class="relative w-full sm:w-64">
                             <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-slate-400 text-xs"></i>
@@ -383,10 +462,10 @@
                     <div class="glass-panel rounded-2xl p-5 space-y-4">
                         <div class="flex justify-between items-center pb-3 border-b border-slate-800">
                             <h2 class="text-sm font-bold text-white flex items-center">
-                                <span class="w-2.5 h-2.5 bg-emerald-400 rounded-full mr-2.5 animate-pulse shadow-glow-emerald"></span>
+                                <span class="w-3 h-3 bg-gradient-to-br from-emerald-300 to-emerald-500 rounded-full mr-2.5 animate-pulse border border-emerald-200/50" style="box-shadow: 0 0 10px rgba(16,185,129,0.85), inset 0 1px 1px rgba(255,255,255,0.7);"></span>
                                 พนักงานที่กำลังลาวันนี้
                             </h2>
-                            <span id="badge-today-count" class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold px-2.5 py-0.5 rounded-full">0</span>
+                            <span id="badge-today-count" class="bg-emerald-500/20 text-emerald-200 border border-emerald-400/35 text-xs font-bold px-2.5 py-0.5 rounded-full" style="box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 2px 6px rgba(16,185,129,0.25);">0</span>
                         </div>
                         <div id="todayLeavesList" class="space-y-2.5">
                             <!-- Dynamic Content -->
@@ -396,10 +475,12 @@
                     <div class="glass-panel rounded-2xl p-5 space-y-4">
                         <div class="flex justify-between items-center pb-3 border-b border-slate-800">
                             <h2 class="text-sm font-bold text-white flex items-center">
-                                <i class="fa-solid fa-clock text-purple-400 mr-2"></i>
+                                <span class="w-7 h-7 icon-3d icon-3d-purple text-purple-300 border border-purple-400/30 rounded-lg text-xs mr-2">
+                                    <i class="fa-solid fa-clock"></i>
+                                </span>
                                 รายงานมาสายวันนี้
                             </h2>
-                            <span id="badge-today-late-count" class="bg-purple-500/20 text-purple-300 border border-purple-500/30 text-xs font-bold px-2.5 py-0.5 rounded-full">0</span>
+                            <span id="badge-today-late-count" class="bg-purple-500/20 text-purple-200 border border-purple-400/35 text-xs font-bold px-2.5 py-0.5 rounded-full" style="box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 2px 6px rgba(168,85,247,0.25);">0</span>
                         </div>
                         <div id="todayLateList" class="space-y-2.5">
                             <!-- Dynamic Content -->
@@ -408,7 +489,12 @@
 
                     <div class="glass-panel rounded-2xl p-5 space-y-4">
                         <div class="flex justify-between items-center pb-3 border-b border-slate-800 text-xs font-bold text-slate-300">
-                            <span><i class="fa-regular fa-clock mr-2 text-indigo-400"></i>กำลังจะลาใน 7 วันข้างหน้า</span>
+                            <span class="flex items-center">
+                                <span class="w-7 h-7 icon-3d icon-3d-sky text-sky-300 border border-sky-400/30 rounded-lg text-xs mr-2">
+                                    <i class="fa-regular fa-clock"></i>
+                                </span>
+                                กำลังจะลาใน 7 วันข้างหน้า
+                            </span>
                         </div>
                         <div id="upcomingLeavesList" class="space-y-2.5 max-h-52 overflow-y-auto pr-1">
                             <!-- Dynamic Content -->
@@ -421,12 +507,14 @@
         <!-- ================= TAB 2: MATRIX VIEW ================= -->
         <section id="tab-matrix" class="tab-content hidden space-y-6">
             <div class="glass-panel p-5 rounded-2xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-                <div>
-                    <h2 class="text-base font-bold text-white flex items-center">
-                        <i class="fa-solid fa-file-invoice text-indigo-400 mr-2"></i>
-                        ใบสรุปวันลาและมาสายพนักงาน
-                    </h2>
-                    <p class="text-xs text-slate-400">แสดงวันที่มีการลาเรียงตามช่องพร้อมโควตาคงเหลือและสถิติมาสายคำนวณอัตโนมัติ</p>
+                <div class="flex items-center gap-3">
+                    <span class="w-10 h-10 icon-3d icon-3d-indigo text-indigo-300 border border-indigo-400/30 rounded-xl text-base shrink-0">
+                        <i class="fa-solid fa-file-invoice"></i>
+                    </span>
+                    <div>
+                        <h2 class="text-base font-bold text-white">ใบสรุปวันลาและมาสายพนักงาน</h2>
+                        <p class="text-xs text-slate-400">แสดงวันที่มีการลาเรียงตามช่องพร้อมโควตาคงเหลือและสถิติมาสายคำนวณอัตโนมัติ</p>
+                    </div>
                 </div>
                 <div class="flex items-center space-x-2 w-full sm:w-auto">
                     <label class="text-xs font-semibold text-slate-300 whitespace-nowrap">เลือกพนักงาน:</label>
@@ -442,12 +530,17 @@
         <!-- ================= TAB 3: EMPLOYEES MANAGEMENT ================= -->
         <section id="tab-employees" class="tab-content hidden space-y-6">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 glass-panel p-5 rounded-2xl">
-                <div>
-                    <h2 class="text-base font-bold text-white">จัดการรายชื่อพนักงานและโควตาวันลา</h2>
-                    <p class="text-xs text-slate-400">ตั้งค่าสิทธิ์วันลาตามนโยบายบริษัท (รองรับทั้ง 9 ประเภทวันลา)</p>
+                <div class="flex items-center gap-3">
+                    <span class="w-10 h-10 icon-3d icon-3d-emerald text-emerald-300 border border-emerald-400/30 rounded-xl text-base shrink-0">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </span>
+                    <div>
+                        <h2 class="text-base font-bold text-white">จัดการรายชื่อพนักงานและโควตาวันลา</h2>
+                        <p class="text-xs text-slate-400">ตั้งค่าสิทธิ์วันลาตามนโยบายบริษัท (รองรับทั้ง 9 ประเภทวันลา)</p>
+                    </div>
                 </div>
-                <button onclick="openEmployeeModal()" class="btn-futuristic btn-shimmer group w-full sm:w-auto bg-gradient-to-r from-indigo-600 via-indigo-500 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white font-semibold text-xs px-5 py-2.5 rounded-xl shadow-glow-indigo flex items-center justify-center border border-indigo-400/40">
-                    <i class="fa-solid fa-plus mr-2 group-hover:rotate-90 transition-transform duration-300"></i> เพิ่มพนักงานใหม่
+                <button onclick="openEmployeeModal()" class="btn-3d btn-3d-indigo btn-shimmer group w-full sm:w-auto text-white font-semibold text-xs px-5 py-2.5 rounded-xl flex items-center justify-center border border-indigo-300/35">
+                    <i class="fa-solid fa-plus mr-2 group-hover:rotate-90 transition-transform duration-300 drop-shadow"></i> เพิ่มพนักงานใหม่
                 </button>
             </div>
 
@@ -477,12 +570,17 @@
         <!-- ================= TAB 4: LEAVE RECORDS ================= -->
         <section id="tab-leaves" class="tab-content hidden space-y-6">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 glass-panel p-5 rounded-2xl">
-                <div>
-                    <h2 class="text-base font-bold text-white">บันทึกการขอลา / มาสาย / วันหยุด</h2>
-                    <p class="text-xs text-slate-400">ลงบันทึกการลาและมาสายเพื่อติดตามประวัติและโควตาอัตโนมัติ</p>
+                <div class="flex items-center gap-3">
+                    <span class="w-10 h-10 icon-3d icon-3d-amber text-amber-300 border border-amber-400/30 rounded-xl text-base shrink-0">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </span>
+                    <div>
+                        <h2 class="text-base font-bold text-white">บันทึกการขอลา / มาสาย / วันหยุด</h2>
+                        <p class="text-xs text-slate-400">ลงบันทึกการลาและมาสายเพื่อติดตามประวัติและโควตาอัตโนมัติ</p>
+                    </div>
                 </div>
-                <button onclick="openLeaveModal()" class="btn-futuristic btn-shimmer group w-full sm:w-auto bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-semibold text-xs px-5 py-2.5 rounded-xl shadow-glow-emerald flex items-center justify-center border border-emerald-400/40">
-                    <i class="fa-solid fa-calendar-plus mr-2 group-hover:scale-110 transition-transform"></i> บันทึกการลา / มาสาย
+                <button onclick="openLeaveModal()" class="btn-3d btn-3d-emerald btn-shimmer group w-full sm:w-auto text-white font-semibold text-xs px-5 py-2.5 rounded-xl flex items-center justify-center border border-emerald-300/35">
+                    <i class="fa-solid fa-calendar-plus mr-2 group-hover:scale-110 transition-transform drop-shadow"></i> บันทึกการลา / มาสาย
                 </button>
             </div>
 
@@ -503,7 +601,7 @@
                             <option value="holiday">วันหยุดนักขัตฤกษ์</option>
                         </select>
                     </div>
-                    <span id="leaveRecordCount" class="text-xs font-semibold text-indigo-300 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">รวม 0 รายการ</span>
+                    <span id="leaveRecordCount" class="text-xs font-semibold text-indigo-200 bg-indigo-500/15 px-3 py-1 rounded-full border border-indigo-400/30" style="box-shadow: inset 0 1px 0 rgba(255,255,255,0.15);">รวม 0 รายการ</span>
                 </div>
 
                 <div class="overflow-x-auto">
@@ -531,11 +629,14 @@
     <div id="employeeModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center hidden p-4">
         <div class="glass-panel w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden my-8 border border-slate-700/60 animate-in fade-in duration-200">
             <div class="px-6 py-4 bg-slate-900/70 border-b border-slate-800 flex justify-between items-center">
-                <h3 id="employeeModalTitle" class="text-sm font-bold text-white flex items-center">
-                    <i class="fa-solid fa-user-plus text-indigo-400 mr-2"></i> เพิ่มพนักงานใหม่
+                <h3 id="employeeModalTitle" class="text-sm font-bold text-white flex items-center gap-2.5">
+                    <span class="w-8 h-8 icon-3d icon-3d-indigo text-indigo-300 border border-indigo-400/30 rounded-xl text-sm">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </span>
+                    <span>เพิ่มพนักงานใหม่</span>
                 </h3>
-                <button onclick="closeEmployeeModal()" class="text-slate-400 hover:text-white p-1.5 rounded-xl hover:bg-white/10 transition-colors active:scale-90">
-                    <i class="fa-solid fa-xmark text-base"></i>
+                <button onclick="closeEmployeeModal()" class="btn-3d btn-3d-icon text-slate-300 hover:text-white p-2 rounded-xl border border-slate-700/80">
+                    <i class="fa-solid fa-xmark text-sm"></i>
                 </button>
             </div>
             <form id="employeeForm" onsubmit="handleEmployeeSubmit(event)" class="p-6 space-y-4 max-h-[80vh] overflow-y-auto">
@@ -557,7 +658,10 @@
 
                 <hr class="border-slate-800 my-2">
                 <p class="text-xs font-bold text-indigo-300 flex items-center">
-                    <i class="fa-solid fa-sliders mr-2"></i> กำหนดโควตาวันลาประจำปี (ตามนโยบายบริษัท)
+                    <span class="w-6 h-6 icon-3d icon-3d-indigo text-indigo-300 border border-indigo-400/30 rounded-lg text-[11px] mr-2">
+                        <i class="fa-solid fa-sliders"></i>
+                    </span>
+                    กำหนดโควตาวันลาประจำปี (ตามนโยบายบริษัท)
                 </p>
 
                 <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -584,8 +688,8 @@
                 </div>
 
                 <div class="flex justify-end space-x-3 pt-4 border-t border-slate-800">
-                    <button type="button" onclick="closeEmployeeModal()" class="btn-futuristic px-4 py-2 text-xs font-semibold text-slate-400 hover:text-white rounded-xl hover:bg-slate-800/60 border border-transparent hover:border-slate-700">ยกเลิก</button>
-                    <button type="submit" class="btn-futuristic btn-shimmer px-5 py-2 text-xs font-semibold bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white rounded-xl shadow-glow-indigo border border-indigo-400/40">บันทึกข้อมูล</button>
+                    <button type="button" onclick="closeEmployeeModal()" class="btn-3d btn-3d-icon px-4 py-2 text-xs font-semibold text-slate-300 hover:text-white rounded-xl border border-slate-700/80">ยกเลิก</button>
+                    <button type="submit" class="btn-3d btn-3d-indigo btn-shimmer px-5 py-2 text-xs font-semibold text-white rounded-xl border border-indigo-300/35">บันทึกข้อมูล</button>
                 </div>
             </form>
         </div>
@@ -595,11 +699,14 @@
     <div id="leaveModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 flex items-center justify-center hidden p-4">
         <div class="glass-panel w-full max-w-lg rounded-3xl shadow-2xl overflow-hidden border border-slate-700/60 animate-in fade-in duration-200">
             <div class="px-6 py-4 bg-slate-900/70 border-b border-slate-800 flex justify-between items-center">
-                <h3 class="text-sm font-bold text-white flex items-center">
-                    <i class="fa-solid fa-pen-to-square text-emerald-400 mr-2"></i> บันทึกการขอลา / มาสาย
+                <h3 class="text-sm font-bold text-white flex items-center gap-2.5">
+                    <span class="w-8 h-8 icon-3d icon-3d-emerald text-emerald-300 border border-emerald-400/30 rounded-xl text-sm">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </span>
+                    <span>บันทึกการขอลา / มาสาย</span>
                 </h3>
-                <button onclick="closeLeaveModal()" class="text-slate-400 hover:text-white p-1.5 rounded-xl hover:bg-white/10 transition-colors active:scale-90">
-                    <i class="fa-solid fa-xmark text-base"></i>
+                <button onclick="closeLeaveModal()" class="btn-3d btn-3d-icon text-slate-300 hover:text-white p-2 rounded-xl border border-slate-700/80">
+                    <i class="fa-solid fa-xmark text-sm"></i>
                 </button>
             </div>
             <form id="leaveForm" onsubmit="handleLeaveSubmit(event)" class="p-6 space-y-4">
@@ -647,16 +754,18 @@
                 </div>
 
                 <div class="flex justify-end space-x-3 pt-4 border-t border-slate-800">
-                    <button type="button" onclick="closeLeaveModal()" class="btn-futuristic px-4 py-2 text-xs font-semibold text-slate-400 hover:text-white rounded-xl hover:bg-slate-800/60 border border-transparent hover:border-slate-700">ยกเลิก</button>
-                    <button type="submit" class="btn-futuristic btn-shimmer px-5 py-2 text-xs font-semibold bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white rounded-xl shadow-glow-emerald border border-emerald-400/40">บันทึกข้อมูล</button>
+                    <button type="button" onclick="closeLeaveModal()" class="btn-3d btn-3d-icon px-4 py-2 text-xs font-semibold text-slate-300 hover:text-white rounded-xl border border-slate-700/80">ยกเลิก</button>
+                    <button type="submit" class="btn-3d btn-3d-emerald btn-shimmer px-5 py-2 text-xs font-semibold text-white rounded-xl border border-emerald-300/35">บันทึกข้อมูล</button>
                 </div>
             </form>
         </div>
     </div>
 
     <!-- UI Notification Toast Box -->
-    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none glass-panel text-white px-4 py-3 rounded-2xl shadow-glass flex items-center space-x-3 border border-slate-700">
-        <i id="toastIcon" class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none glass-panel text-white px-4 py-3 rounded-2xl flex items-center space-x-3 border border-slate-700" style="box-shadow: inset 0 1px 0 rgba(255,255,255,0.16), 0 12px 28px rgba(0,0,0,0.55);">
+        <span id="toastIconBadge" class="w-7 h-7 icon-3d icon-3d-emerald rounded-lg border border-emerald-400/30 text-sm">
+            <i id="toastIcon" class="fa-solid fa-circle-check text-emerald-300"></i>
+        </span>
         <span id="toastMsg" class="text-xs font-semibold">บันทึกสำเร็จ</span>
     </div>
 
@@ -905,14 +1014,14 @@
         function switchTab(tabName) {
             document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
             document.querySelectorAll('.tab-link').forEach(el => {
-                el.classList.remove('active', 'bg-gradient-to-r', 'from-indigo-600', 'to-violet-600', 'text-white', 'shadow-glow-indigo');
-                el.classList.add('text-slate-400', 'hover:text-slate-100');
+                el.classList.remove('active', 'btn-3d-indigo', 'text-white', 'border-indigo-300/30');
+                el.classList.add('btn-3d-icon', 'text-slate-300', 'hover:text-white', 'border-slate-700/70');
             });
 
             document.getElementById(`tab-${tabName}`).classList.remove('hidden');
             const activeBtn = document.getElementById(`tab-btn-${tabName}`);
-            activeBtn.classList.add('active', 'bg-gradient-to-r', 'from-indigo-600', 'to-violet-600', 'text-white', 'shadow-glow-indigo');
-            activeBtn.classList.remove('text-slate-400');
+            activeBtn.classList.remove('btn-3d-icon', 'text-slate-300', 'border-slate-700/70');
+            activeBtn.classList.add('active', 'btn-3d-indigo', 'text-white', 'border-indigo-300/30');
 
             if (tabName === 'dashboard') renderDashboard();
             if (tabName === 'matrix') renderMatrixView();
@@ -1029,16 +1138,16 @@
             if (todayLeaveCount > 0 || todayLateCount > 0) {
                 let alertHtml = '';
                 if (todayLeaveCount > 0) {
-                    alertHtml += `<div><i class="fa-solid fa-bell text-amber-400 mr-2"></i> วันนี้มีพนักงานลาหยุด <strong class="text-amber-200">${todayLeaveCount} คน</strong></div>`;
+                    alertHtml += `<div class="flex items-center"><span class="w-6 h-6 icon-3d icon-3d-amber text-amber-300 border border-amber-400/30 rounded-lg text-xs mr-2"><i class="fa-solid fa-bell"></i></span> วันนี้มีพนักงานลาหยุด <strong class="text-amber-200 ml-1">${todayLeaveCount} คน</strong></div>`;
                 }
                 if (todayLateCount > 0) {
-                    alertHtml += `<div><i class="fa-solid fa-clock text-purple-400 mr-2"></i> วันนี้มีพนักงานลงบันทึกมาสาย <strong class="text-purple-200">${todayLateCount} คน</strong></div>`;
+                    alertHtml += `<div class="flex items-center"><span class="w-6 h-6 icon-3d icon-3d-purple text-purple-300 border border-purple-400/30 rounded-lg text-xs mr-2"><i class="fa-solid fa-clock"></i></span> วันนี้มีพนักงานลงบันทึกมาสาย <strong class="text-purple-200 ml-1">${todayLateCount} คน</strong></div>`;
                 }
 
                 alertsContainer.innerHTML += `
                     <div class="p-3.5 bg-amber-500/10 border border-amber-500/30 rounded-2xl text-amber-100 text-xs flex flex-col sm:flex-row sm:items-center justify-between gap-2 shadow-glass backdrop-blur-md">
-                        <div class="space-y-1">${alertHtml}</div>
-                        <button onclick="switchTab('leaves')" class="font-semibold underline hover:text-amber-300 text-left">ดูรายละเอียด</button>
+                        <div class="space-y-1.5">${alertHtml}</div>
+                        <button onclick="switchTab('leaves')" class="btn-3d btn-3d-amber font-semibold text-amber-200 hover:text-white px-3 py-1.5 rounded-xl border border-amber-400/30 text-left self-start sm:self-auto">ดูรายละเอียด</button>
                     </div>
                 `;
             }
@@ -1054,7 +1163,7 @@
                                 <p class="font-bold text-white">${l.empName}</p>
                                 <p class="text-slate-400">${typeObj ? typeObj.name : l.type} (${l.days} วัน)</p>
                             </div>
-                            <span class="px-2.5 py-1 bg-amber-500/20 text-amber-300 border border-amber-500/30 rounded-lg font-semibold text-[10px]">วันนี้</span>
+                            <span class="px-2.5 py-1 bg-amber-500/20 text-amber-200 border border-amber-400/35 rounded-lg font-semibold text-[10px]" style="box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 2px 6px rgba(245,158,11,0.2);">วันนี้</span>
                         </div>
                     `;
                 });
@@ -1070,7 +1179,7 @@
                                 <p class="font-bold text-white">${l.empName}</p>
                                 <p class="text-purple-300 font-medium">${l.reason || 'มาสาย'}</p>
                             </div>
-                            <span class="px-2.5 py-1 bg-purple-500/20 text-purple-300 border border-purple-500/30 rounded-lg font-bold text-[10px]">มาสาย</span>
+                            <span class="px-2.5 py-1 bg-purple-500/20 text-purple-200 border border-purple-400/35 rounded-lg font-bold text-[10px]" style="box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 2px 6px rgba(168,85,247,0.25);">มาสาย</span>
                         </div>
                     `;
                 });
@@ -1087,7 +1196,7 @@
                                 <p class="font-semibold text-white">${l.empName}</p>
                                 <p class="text-slate-400">${typeObj ? typeObj.name : l.type} • ${formatThaiDate(l.startDate)}</p>
                             </div>
-                            <span class="px-2 py-1 bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 rounded-lg text-[10px] font-semibold">อีก ${l.diffDays} วัน</span>
+                            <span class="px-2 py-1 bg-indigo-500/20 text-indigo-200 border border-indigo-400/35 rounded-lg text-[10px] font-semibold" style="box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 2px 6px rgba(99,102,241,0.25);">อีก ${l.diffDays} วัน</span>
                         </div>
                     `;
                 });
@@ -1115,8 +1224,8 @@
                                 <p class="text-xs text-slate-400">${emp.role || '-'} • ${emp.dept || '-'}</p>
                             </div>
                             <div class="flex gap-1.5">
-                                ${stats.late.used > 0 ? `<span class="px-2.5 py-0.5 bg-purple-500/20 text-purple-300 border border-purple-500/30 text-[10px] font-bold rounded-full">สาย ${stats.late.used} ครั้ง</span>` : ''}
-                                ${stats.vacation.remaining <= 2 ? `<span class="px-2.5 py-0.5 bg-rose-500/20 text-rose-300 border border-rose-500/30 text-[10px] font-bold rounded-full">พักร้อนใกล้หมด</span>` : ''}
+                                ${stats.late.used > 0 ? `<span class="px-2.5 py-0.5 bg-purple-500/20 text-purple-200 border border-purple-400/35 text-[10px] font-bold rounded-full" style="box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 2px 6px rgba(168,85,247,0.25);">สาย ${stats.late.used} ครั้ง</span>` : ''}
+                                ${stats.vacation.remaining <= 2 ? `<span class="px-2.5 py-0.5 bg-rose-500/20 text-rose-200 border border-rose-400/35 text-[10px] font-bold rounded-full" style="box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 2px 6px rgba(244,63,94,0.25);">พักร้อนใกล้หมด</span>` : ''}
                             </div>
                         </div>
 
@@ -1176,7 +1285,7 @@
                         <h3 class="font-extrabold text-white text-lg">${emp ? emp.name : ''}</h3>
                         <p class="text-xs text-slate-400 mt-0.5">ตำแหน่ง: ${emp ? emp.role || '-' : '-'} | แผนก: ${emp ? emp.dept || '-' : '-'}</p>
                     </div>
-                    <span class="text-xs bg-indigo-500/10 text-indigo-300 border border-indigo-500/30 px-3.5 py-1.5 rounded-xl font-semibold">แบบฟอร์มบันทึกวันลาประจำปี Matrix</span>
+                    <span class="text-xs bg-indigo-500/15 text-indigo-200 border border-indigo-400/35 px-3.5 py-1.5 rounded-xl font-semibold" style="box-shadow: inset 0 1px 0 rgba(255,255,255,0.18), 0 3px 10px rgba(79,70,229,0.25);">แบบฟอร์มบันทึกวันลาประจำปี Matrix</span>
                 </div>
 
                 <div class="overflow-x-auto rounded-xl border border-slate-800">
@@ -1279,12 +1388,12 @@
                             <span class="text-emerald-400 font-bold">${stats.sick_cert.remaining}</span>
                         </td>
                         <td class="p-3.5 text-center font-bold text-purple-300 bg-purple-500/10">${stats.late.used} ครั้ง</td>
-                        <td class="p-3.5 text-center space-x-1">
-                            <button onclick="editEmployee('${emp.id}')" class="btn-futuristic text-indigo-400 hover:text-white p-2 rounded-xl hover:bg-indigo-500/30 border border-transparent hover:border-indigo-400/40 transition-all shadow-glow-indigo">
-                                <i class="fa-solid fa-pen-to-square"></i>
+                        <td class="p-3.5 text-center space-x-1.5">
+                            <button onclick="editEmployee('${emp.id}')" class="btn-3d btn-3d-icon text-indigo-300 hover:text-white p-2 rounded-xl border border-indigo-400/35 hover:border-indigo-300" title="แก้ไข">
+                                <i class="fa-solid fa-pen-to-square drop-shadow"></i>
                             </button>
-                            <button onclick="deleteEmployee('${emp.id}')" class="btn-futuristic text-rose-400 hover:text-white p-2 rounded-xl hover:bg-rose-500/30 border border-transparent hover:border-rose-400/40 transition-all shadow-glow-rose">
-                                <i class="fa-solid fa-trash"></i>
+                            <button onclick="deleteEmployee('${emp.id}')" class="btn-3d btn-3d-icon text-rose-300 hover:text-white p-2 rounded-xl border border-rose-400/35 hover:border-rose-300" title="ลบ">
+                                <i class="fa-solid fa-trash drop-shadow"></i>
                             </button>
                         </td>
                     </tr>
@@ -1324,8 +1433,8 @@
                         <td class="p-4 text-center text-xs font-bold text-white">${record.days} ${isLate ? 'ครั้ง' : 'วัน'}</td>
                         <td class="p-4 text-xs text-slate-400 max-w-xs truncate">${record.reason || '-'}</td>
                         <td class="p-4 text-center">
-                            <button onclick="deleteLeaveRecord('${record.id}')" class="btn-futuristic text-rose-400 hover:text-white p-2 rounded-xl hover:bg-rose-500/30 border border-transparent hover:border-rose-400/40 transition-all shadow-glow-rose" title="ลบรายการ">
-                                <i class="fa-solid fa-trash"></i>
+                            <button onclick="deleteLeaveRecord('${record.id}')" class="btn-3d btn-3d-icon text-rose-300 hover:text-white p-2 rounded-xl border border-rose-400/35 hover:border-rose-300" title="ลบรายการ">
+                                <i class="fa-solid fa-trash drop-shadow"></i>
                             </button>
                         </td>
                     </tr>
@@ -1340,7 +1449,12 @@
             if (empId) {
                 const emp = window.employees.find(e => e.id === empId);
                 if (emp) {
-                    document.getElementById('employeeModalTitle').innerHTML = '<i class="fa-solid fa-user-pen text-indigo-400 mr-2"></i> แก้ไขข้อมูลพนักงาน';
+                    document.getElementById('employeeModalTitle').innerHTML = `
+                        <span class="w-8 h-8 icon-3d icon-3d-indigo text-indigo-300 border border-indigo-400/30 rounded-xl text-sm">
+                            <i class="fa-solid fa-user-pen"></i>
+                        </span>
+                        <span>แก้ไขข้อมูลพนักงาน</span>
+                    `;
                     document.getElementById('empId').value = emp.id;
                     document.getElementById('empName').value = emp.name;
                     document.getElementById('empRole').value = emp.role || '';
@@ -1354,7 +1468,12 @@
                     document.getElementById('quotaSickCert').value = q.sick_cert !== undefined ? q.sick_cert : 30;
                 }
             } else {
-                document.getElementById('employeeModalTitle').innerHTML = '<i class="fa-solid fa-user-plus text-indigo-400 mr-2"></i> เพิ่มพนักงานใหม่';
+                document.getElementById('employeeModalTitle').innerHTML = `
+                    <span class="w-8 h-8 icon-3d icon-3d-indigo text-indigo-300 border border-indigo-400/30 rounded-xl text-sm">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </span>
+                    <span>เพิ่มพนักงานใหม่</span>
+                `;
             }
 
             document.getElementById('employeeModal').classList.remove('hidden');
@@ -1479,12 +1598,15 @@
             const toast = document.getElementById('toast');
             const toastMsg = document.getElementById('toastMsg');
             const toastIcon = document.getElementById('toastIcon');
+            const toastIconBadge = document.getElementById('toastIconBadge');
 
             toastMsg.innerText = msg;
             if (type === 'success') {
-                toastIcon.className = 'fa-solid fa-circle-check text-emerald-400 text-base';
+                toastIconBadge.className = 'w-7 h-7 icon-3d icon-3d-emerald rounded-lg border border-emerald-400/30 text-sm';
+                toastIcon.className = 'fa-solid fa-circle-check text-emerald-300';
             } else {
-                toastIcon.className = 'fa-solid fa-circle-info text-sky-400 text-base';
+                toastIconBadge.className = 'w-7 h-7 icon-3d icon-3d-sky rounded-lg border border-sky-400/30 text-sm';
+                toastIcon.className = 'fa-solid fa-circle-info text-sky-300';
             }
 
             toast.classList.remove('translate-y-20', 'opacity-0');
